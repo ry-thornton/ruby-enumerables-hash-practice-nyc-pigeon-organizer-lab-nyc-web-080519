@@ -22,9 +22,9 @@ def nyc_pigeon_organizer(data)
     info.each do |value, names|
       names.each do |name|
         result[name][key].push(value.to_s)
-        binding.pry 
       end
     end
   end
+  binding.pry 
   return result
 end 
