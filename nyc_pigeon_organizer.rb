@@ -17,28 +17,14 @@ def nyc_pigeon_organizer(data)
       result[name] = keys
     end
   end
-  binding.pry 
+  
   data.each do |key, info|
     info.each do |value, names|
       names.each do |name|
-        
-  
-  
-
-  
-  
-  result.each do |name, info|
-    info.each do |key, facts|
-      binding.pry 
-      color.each do |colors, array|
-        array.each do |names|
-          if names == name 
-            facts.push(colors.to_s)
-            
-          end
-        end
+        result[name][key].push(value)
+        binding.pry 
       end
-    end 
+    end
   end
   return result
 end 
