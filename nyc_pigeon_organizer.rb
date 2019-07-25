@@ -20,6 +20,8 @@ def nyc_pigeon_organizer(data)
   binding.pry 
   
   
+  
+  
   result.each do |name, info|
     info.each do |key, facts|
       binding.pry 
@@ -27,6 +29,7 @@ def nyc_pigeon_organizer(data)
         array.each do |names|
           if names == name 
             facts.push(colors.to_s)
+            
           end
         end
       end
