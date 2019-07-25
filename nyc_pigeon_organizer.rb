@@ -17,6 +17,7 @@ def nyc_pigeon_organizer(data)
       result[name] = keys
     end
   end
+  binding.pry 
   
   
   result.each do |name, info|
