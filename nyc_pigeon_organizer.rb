@@ -21,6 +21,8 @@ def nyc_pigeon_organizer(data)
   
   
   
+
+  
   
   result.each do |name, info|
     info.each do |key, facts|
