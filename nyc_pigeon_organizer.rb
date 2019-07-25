@@ -1,3 +1,34 @@
+require 'pry'
+
+
+
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
-end
+  result = {}
+  keys = {}
+  color = data[:color]
+  gender = data[:gender]
+  lives = data[:lives]
+  data.each do |k, v|
+    keys[k] = []
+  end
+  gender.each do |k, v|
+    v.each do |name|
+      result[name] = keys
+    end
+  end
+  
+  
+  result.each do |name, info|
+    info.each do |key, facts|
+      color.each do |colors, array|
+        array.each do |names|
+          if names == name 
+            facts.push(colors.to_s)
+          end
+        end
+      end
+    end 
+  end
+  return result
+end 
