@@ -5,16 +5,16 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   result = {}
-  keys = {}
+
   color = data[:color]
   gender = data[:gender]
   lives = data[:lives]
-  data.each do |k, v|
-    keys[k] = []
-  end
   gender.each do |k, v|
     v.each do |name|
-      result[name] = keys
+      result[name] = {:color => [],
+      :gender => [],
+      :lives => []
+      }
     end
   end
   
